@@ -1,0 +1,2 @@
+npm i mongoose-sequence -> tu dong tang gia tri
+mongoose-slug-generator -> tu dong get slug tu title
