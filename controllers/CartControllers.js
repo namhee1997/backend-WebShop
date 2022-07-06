@@ -27,7 +27,8 @@ let cartController = {
     },
     deleteCart: async (req, res) => {
         try {
-            let data = await Cart.deleteOne({ _id: req.params.id });
+            console.log('start delete', req.params.id);
+            let data = await Cart.deleteOne({ idPhone: req.params.id });
             res.status(200).json('success');
 
 

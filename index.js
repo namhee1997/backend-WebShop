@@ -29,7 +29,7 @@ app.use(cookieParser());
 // app.use(express.urlencoded({ limit: '50mb' }));
 
 mongoose
-    .connect(process.env.DB_MONGOO, {
+    .connect(process.env.DB_MONGOO_LIVE, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
