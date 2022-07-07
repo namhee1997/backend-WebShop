@@ -145,8 +145,7 @@ app.use('/v1/cart', cartRoutes);
 app.use('/v1/rate-product', rateProductRoutes);
 app.use('/v1/comment-product', commentProductRoutes);
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log('is running server success!');
 })
 
