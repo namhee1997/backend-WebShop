@@ -129,6 +129,9 @@ app.use(express.json());
 
 //ROUTES
 
+app.get('/', (req, res) => {
+    res.send('hello world')
+})
 app.use('/v1/auth', authRoutes);
 app.use('/v1/user', userRouter);
 app.use('/v1/cloud', cloudRoutes);
