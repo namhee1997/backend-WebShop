@@ -4,7 +4,6 @@ const cartSchema = new mongoose.Schema(
     {
         userId: {
             type: String,
-            unique: true,
             trim: true,
         },
         idPhone: {
