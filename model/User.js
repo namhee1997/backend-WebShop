@@ -5,13 +5,11 @@ const userSchema = new mongoose.Schema(
     {
         userId: {
             type: String,
-            unique: true,
             max: 8
         },
         username: {
             type: String,
             lowercase: true,
-            unique: true,
             required: true,
             index: true
         },
@@ -38,15 +36,10 @@ const userSchema = new mongoose.Schema(
         email: {
             type: String,
             lowercase: true,
-            required: [true, "can't be blank"],
-            match: [/\S+@\S+\.\S+/, 'is invalid email'],
             index: true
         },
         phone: {
             type: String,
-            lowercase: true,
-            unique: true,
-            required: [true, "can't be blank"], match: [/(((\+|)84)|0)(3|5|7|8|9)+([0-9]{8})\b/, 'is invalid phone'],
             index: true
         },
 
