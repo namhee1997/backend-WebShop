@@ -8,7 +8,6 @@ const cartSchema = new mongoose.Schema(
         },
         idPhone: {
             type: String,
-            unique: true,
             trim: true,
         },
         selected: {

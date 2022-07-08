@@ -35,7 +35,7 @@ const orderSuccessSchema = new mongoose.Schema(
             type: String,
             lowercase: true,
             unique: true,
-            required: [true, "can't be blank"], match: [/(((\+|)84)|0)(3|5|7|8|9)+([0-9]{8})\b/, 'is invalid phone'],
+            required: [true, "can't be blank"],
             index: true
         },
 
